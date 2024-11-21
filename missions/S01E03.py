@@ -2,11 +2,17 @@ import json
 import re
 import requests
 from S01E01 import get_answer
+from dotenv import load_dotenv
+
+load_dotenv()
+
+key = os.getenv("API_KEY")
+
 
 with open("kalibracja.json", "r") as file:
     data = json.load(file)
 
-data["apikey"] = "***"
+data["apikey"] = key
 content = "You say only answer on added question. Not with full sentence only direct answer."
 
 for item in data['test-data']:
