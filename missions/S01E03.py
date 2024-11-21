@@ -6,7 +6,7 @@ from S01E01 import get_answer
 with open("kalibracja.json", "r") as file:
     data = json.load(file)
 
-data["apikey"] = "77e0c508-1a1f-4d06-9060-e6034fdac101"
+data["apikey"] = "***"
 content = "You say only answer on added question. Not with full sentence only direct answer."
 
 for item in data['test-data']:
