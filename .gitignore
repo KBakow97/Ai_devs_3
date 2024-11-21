@@ -1,1 +1,2 @@
-.env
+.envions/*
+/missions/__pycache__
